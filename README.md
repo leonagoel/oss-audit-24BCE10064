@@ -17,6 +17,15 @@ This repository contains a structured audit of **Wireshark**, the world's leadin
 │   ├── script4_analyzer.sh   # Log-level analysis using regex/grep
 │   └── script5_manifesto.sh  # Interactive OSS commitment generator
 └── README.md                 # Project documentation
+```
+
+## 🔍 Audit Findings Summary
+| Component | Status | Observation |
+| :--- | :--- | :--- |
+| **License** | GPL v2 | Confirmed via `COPYING` file in Wireshark source. |
+| **Permissions** | Secure | System directories verified via `script3_auditor.sh`. |
+| **Logs** | Clean | No critical networking errors found via `script4_analyzer.sh`. |
+| **Environment** | WSL/Ubuntu | Successfully tested on Linux Kernel 5.15+. |
 
 ## How to Run on Linux
 To execute these scripts, ensure you are on a Linux environment and follow these steps:
